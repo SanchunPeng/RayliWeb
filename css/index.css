@@ -1,0 +1,16 @@
+/*Top Start*/
+.top{height:30px;width:100%;background:#ee1c24;}
+.top .top_box{width:1180px;height:30px;margin:0 auto;background:#ee1c24;}
+.top .top_nav{padding:8px 0 0 10px}
+.top .top_nav li{float:left;padding-right: 14px;}
+.top .top_nav li a{color:#ffb4b6;}
+.top .top_nav li a:hover{color:#fbf9f9;}
+.top .login_status{display: inline;padding: 8px 20px 0 0;color:#ee1c24;}
+.top .login_status a{float: right;padding-right: 20px;color:#ffb4b6;}
+.top .login_status a:hover{color:#fbf9f9;}
+/*Top End*/
+/*Logo Start*/
+.logo{height: 152px;background: #ee1c24;}	
+.logo .logo_box{height: 122px;width:1180px;margin:0 auto;padding-top: 30px;background: #ee1c24;}
+.logo .logo_box .logo_icon{width:300px;margin:0 auto;}	
+/*Logo End*/
