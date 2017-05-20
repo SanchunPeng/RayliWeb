@@ -25,4 +25,5 @@
 .header_nav_box dd a{padding:0px 14px; position:relative;color:#FFF}
 .header_nav_box dd a:hover{color:#EE1C24}
 .header_nav_line{width:16px;height:40px;margin:10px 15px 0 0;border-left: 1px solid #777;}
+.header_nav_search_show{width:20px;height:20px;background:url(../img/serach_show.png) no-repeat;position:absolute;right: 15px;top:20px;}
 /*Header_Nav End*/
