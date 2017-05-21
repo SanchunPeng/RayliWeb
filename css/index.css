@@ -32,4 +32,17 @@
 .header_nav_search_btn{border:none;}
 /*Header_Nav End*/
 /*Banner Start*/
+.banner{width:100%;height: 500px;margin:0 auto;overflow: hidden;}
+.banner_box{width:850px;height:500px;margin:0 auto;background:#EE1C24;position:relative;}
+.banner_prev,.banner_next{width:500px;height:500px;background:rgba(0,0,0,0.7);z-index: 333;}
+.banner_prev{position: absolute;top:0;left:-500px;}
+.banner_prev img{position:absolute; top:220px; right:20px;}
+.banner_next{position: absolute;top:0;right:-500px;}
+.banner_next img{position:absolute;top:220px;left: 20px;}
+.banner_container{width:2000%; height:500px;position:absolute; left:-850px;}
+.banner_container img{float:left;}
+.banner_btn{position:absolute;bottom:40px;left:42%;}
+.banner_btn ul li{width:12px;height:12px;float:left;background:#000;border:1px solid #FFF;border-radius: 5px;margin:0 5px;}
+.banner_btn ul li:hover{background:#EE1C24;}
+.banner_btn ul li.banner_li_hover{background: #EE1C24;}
 /*Banner End*/
