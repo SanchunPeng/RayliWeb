@@ -74,9 +74,15 @@ $(function(){
 			}
 			$("ul.content_one_left_bottom_flashBtn li").eq(index_bottom).addClass("one_left_bottom_hover").siblings().removeClass("one_left_bottom_hover");
 			$(".content_one_left_bottom_flash").stop().animate({left:-index_bottom*280},400);
-		},2000);
-		
-		
+		},2000);	
 	}
+	
+	//content_one_right_top Start 抢先试用
+	$(".content_one_right_btn ul li").mouseover(function(){
+		var right_top=$(this).index();
+		$(".content_one_right_btn ul li").eq(right_top).addClass("content_one_right_top_hover").siblings("li").removeClass("content_one_right_top_hover");
+		
+		
+	})
 	
 })
