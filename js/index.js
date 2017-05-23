@@ -100,5 +100,18 @@ $(function(){
 		}
 		$(".content_one_right_btn ul li").eq(right_index).addClass("content_one_right_top_hover").siblings("li").removeClass("content_one_right_top_hover");
 		$(".content_one_right_img").animate({left:-right_index*180},230);
-	})
+	});
+	
+	//Content_one_right_bottom Start 热门排行
+	//动态添加序号
+	function addIndex(){
+		var ulLen=$(".content_one_right_hotnews_select ul").length;
+		var liLen=$(".content_one_right_hotnews_select ul li").length/6;
+		for(var i=0;i<ulLen;i++){
+			for(var j=0;j<liLen;j++){
+				$(".content_one_right_hotnews_select ul").eq(i).find("li").eq(j).find("span").text(j+1);
+			}
+		}
+	}
+	addIndex();
 })
