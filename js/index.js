@@ -114,4 +114,10 @@ $(function(){
 		}
 	}
 	addIndex();
+	//span动画
+	$(".content_right_bottom_btn span").mouseover(function(){
+		$(this).addClass("right_btn_hover").siblings("span").removeClass("right_btn_hover");
+		var hot_index=$(this).index();
+		$(".content_one_right_hotnews_select ul").eq(hot_index).fadeIn().siblings("ul").fadeOut();
+	});
 })
