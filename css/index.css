@@ -84,6 +84,7 @@
 /*Content_one_center End*/
 /*Content_one_right Start*/
 .content_one_right{width:280px;height:720px;}
+.content_one_right_top{height:294px;}
 .content_one_right_prev,.content_one_right_next{width:30px;height:230px;padding-top: 80px;}
 .content_one_right_box{width:180px;height:230px;overflow: hidden;position:relative;margin-left:20px;}
 .content_one_right_img{width:1000%;height:230px;position:absolute;left:0px;}
@@ -99,7 +100,9 @@
 .content_one_right_img ul li dl dd a:hover{background:#ff0033;}
 .content_one_right_btn{width:100px;margin:0 auto;}
 .content_one_right_btn ul li{width:10px;height:10px;background:#000000;float:left;border-radius: 5px;margin:3px;}
-.content_one_right_btn ul li.content_one_right_top_hover{color:#EE1C24;}
+.content_one_right_btn ul li.content_one_right_top_hover{background:#EE1C24;}
+.content_one_right_bottom{height:;margin-top:30px;}
+
 /*Content_one_right End*/
 /*Content End*/
 /*Footer Start*/

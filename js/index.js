@@ -78,11 +78,27 @@ $(function(){
 	}
 	
 	//content_one_right_top Start 抢先试用
+	var right_index=0;//记录每一次通过按钮或者鼠标选择的li的index
 	$(".content_one_right_btn ul li").mouseover(function(){
-		var right_top=$(this).index();
-		$(".content_one_right_btn ul li").eq(right_top).addClass("content_one_right_top_hover").siblings("li").removeClass("content_one_right_top_hover");
+		right_index=$(this).index();
+		$(".content_one_right_btn ul li").eq(right_index).addClass("content_one_right_top_hover").siblings("li").removeClass("content_one_right_top_hover");
+		$(".content_one_right_img").animate({left:-right_index*180},230);
 		
-		
+	});
+	$("#content_one_prev_img").click(function(){
+		right_index--;
+		if(right_index<0){
+			right_index=4;
+		}
+		$(".content_one_right_btn ul li").eq(right_index).addClass("content_one_right_top_hover").siblings("li").removeClass("content_one_right_top_hover");
+		$(".content_one_right_img").animate({left:-right_index*180},230);
 	})
-	
+	$("#content_one_next_img").click(function(){
+		right_index++;
+		if(right_index>4){
+			right_index=0;
+		}
+		$(".content_one_right_btn ul li").eq(right_index).addClass("content_one_right_top_hover").siblings("li").removeClass("content_one_right_top_hover");
+		$(".content_one_right_img").animate({left:-right_index*180},230);
+	})
 })
