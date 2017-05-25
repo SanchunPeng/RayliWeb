@@ -120,4 +120,11 @@ $(function(){
 		var hot_index=$(this).index();
 		$(".content_one_right_hotnews_select ul").eq(hot_index).fadeIn().siblings("ul").fadeOut();
 	});
+	
+	//Content_two_Accordion Start
+	$(".content_two_accordion_img ul li").mouseover(function(){
+		$(this).addClass("accordion_img_show").removeClass("accordion_img_ordinary");
+		$(this).siblings("li").addClass("accordion_img_ordinary").removeClass("accordion_img_show");
+		$(this).stop().animate({width:"680"},300).siblings("li").stop().animate({width:"100"},300);
+	});
 })
